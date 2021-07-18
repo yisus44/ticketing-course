@@ -4,6 +4,8 @@ import mongoose from 'mongoose';
 import { app } from './app';
 
 async function start() {
+  console.log('starting up...');
+
   try {
     process.env.JWT_KEY = 'secret';
     if (!process.env.JWT_KEY) {
